@@ -1,0 +1,14 @@
+img
+{
+    margin: center;
+    width: 80%;
+    height: 21vh;
+    border: 3px solid rgb(219, 134,5);
+    padding: 10px;
+    background-color: rgb(219, 134,5);
+    color:white;
+    float: right;
+}
+body{
+    background-color:cadetblue;
+}
