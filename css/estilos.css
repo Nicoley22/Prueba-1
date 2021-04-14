@@ -12,7 +12,6 @@ p.centrado
 
     text-align: center;
 
-    
 }
 
 body
@@ -21,5 +20,41 @@ body
 }
 .centrado
 {
+    text-align: center;
+}
+
+.p1
+{
+    margin: auto;
+    width: 17%;
+    height: 15vh;
+    color:black;
+    float:initial;
+    font-family: cursive;
+}
+
+.p2
+{
+    margin: auto;
+    width: 25%;
+    height: 15vh;
+    color:black;
+    float:initial;
+    font-family: cursive;
+}
+
+.p3
+{
+    margin: auto;
+    width: 30%;
+    height: 15vh;
+    color:black;
+    float:initial;
+    font-family: cursive;
+}
+
+h1
+{
+    font-size: 40px;
     text-align: center;
 }
