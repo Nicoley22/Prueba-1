@@ -1,49 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artistas</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link type="text/css" rel="stylesheet" href="css/estilos.css">
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand text-white">
-            Grupo Cero
-        </a>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link text-white" href="indexRap.html">Inicio</a>
-              </li>
-              
-              <li class="nav-item">
-                <a class="nav-link text-white" href="tablaartistas.html">Artistas</a>
-              </li>
-              
-              
+    <head>
+    <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-            </ul>
-
-            <form class="form-inline">
-                <input class="form-control mr-sm-2">
-                <button class="btn btn-success">Buscar</button>
-                <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="iniciarsesion.html">Iniciar Sesion</a>
-                </li>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link type="text/css" rel="stylesheet" href="css/estilos.css">
+        <title> </title>
+    </head>
+    <body>
+        
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <a class="navbar-brand text-white">
-
+                    Grupo Cero
                 </a>
-                    <a class="nav-link text-white" href="registro.html">Registrar</a>
-                </ul>
-            </form>
-          </div>
-
-    </nav>
-            <table class="table table-dark" >
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+                        <a class="nav-link text-white" href="indexRap.html">Inicio</a>
+                      </li>
+                      
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Artistas</a>
+                      </li>    
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="api.html">Nuevas Obras</a>
+                      </li>                  
+                    </ul>
+                    
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2">
+                        <button class="btn btn-success mr-sm-2">Buscar</button>
+                        <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="iniciarsesion.html">Iniciar Sesion</a>
+                        </li>
+                        <a class="navbar-brand text-white">
+                             
+                        </a>
+                            <a class="nav-link text-white" href="registro.html">Registrar</a>
+                        </ul>
+                        
+                    </form>
+                  </div>
+                
+            </nav>
+            <table class="table">
                 <thead>
                   <tr>
                     <th scope="col">n°</th>
@@ -56,34 +60,39 @@
                 <tbody>
                   <tr>
                     <th scope="row">1</th>
-                    <td> Vincent </td>
-                    <td> van Gogh</td>
-                    <td> VincentvanGogh@yopmail.com</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
                     <td>1</td>
                   </tr>
                   <tr>
                     <th scope="row">2</th>
-                    <td>Edvard </td>
-                    <td>Munch</td>
-                    <td>Munch@yopmail.com</td>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
                     <td>1</td>
                   </tr>
                   <tr>
                     <th scope="row">3</th>
-                    <td>Alphonse </td>
-                    <td>Mucha</td>
-                    <td>AlphonseM@gmail.com</td>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
                     <td>1</td>
                   </tr>
                 </tbody>
               </table>
-
-        </div> 
+              <div class="jumbotron">
+                <h5 class="display-5">Contacto</h5>
+                <h6 class="lead">Correo:</h6>
+                <h6 class="lead">Telefono:</h6>
+                <h6 class="lead">Celular:</h6>
+                <h6 class="lead">Direccion:</h6>
+              </div>
+        
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         </body>
-
 </html>
