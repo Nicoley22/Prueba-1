@@ -72,7 +72,6 @@
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
                         </a>
                         <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
@@ -83,12 +82,18 @@
                 </div>
             </div>
         
-            <div class="jumbotron">
+            <div class="jumbotron" >
+
                 <h5 class="display-5">Contacto</h5>
                 <h6 class="lead">Correo:</h6>
                 <h6 class="lead">Telefono:</h6>
                 <h6 class="lead">Celular:</h6>
                 <h6 class="lead">Direccion:</h6>
+                
+              </div>
+
+              <div>
+                <table class="jumbotron" id="tabla1">
               </div>
         </div> 
     <!-- Optional JavaScript -->
@@ -97,4 +102,45 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         </body>
-</html>
+        
+        <script>
+
+            $(document).ready(function(){
+            
+                $().ready(
+                    function()
+                    {
+                        getLocation();
+                    }
+                );
+                
+            
+            });
+            
+            function getLocation() {
+              if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+              } else {
+                //x.innerHTML = "Geolocation is not supported by this browser.";
+              }
+            }
+            
+            function showPosition(position) {
+                $.get("http://api.openweathermap.org/data/2.5/weather?units=metric&lat=" + position.coords.latitude + "&lon=" + position.coords.longitude + "&appid=cc4c1430ce6f5291cc0c007d0ccc27d3",
+                        function(data){
+            
+                            $("#tabla1").append("<h5><h5>"+"Ubicación: "+ data.name +
+                                "</h5><h5>"+"Temperatura Minima: "+data.main.temp_min+
+                                "</h5><h5>"+"Temperatura Máxima: "+data.main.temp_max+
+                                "</h5><h5>"+"Clima: "+"<img src=http://openweathermap.org/img/wn/"+data.weather.icon+"@2x.png>"+"</h5></h5>");
+                            
+                        });
+            
+                
+            
+              
+            }
+            
+            
+            </script>
+            </html>
