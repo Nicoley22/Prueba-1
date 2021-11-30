@@ -10,14 +10,48 @@
     <title>Crear usuario</title>
 </head>
 <body>
-    
+    <nav class="navbar navbar-expand-lg  menu">
+        <a class="navbar-brand text-black">
+            <img src="img/logo2.png" class="d-block w-100" width="60px" height="60px">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-black" href="indexRap.html">Inicio</a>
+                  </li>
+              <li class="nav-item active">
+                <a class="nav-link text-black" href="producto.html">Productos</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link text-black" href="inicioSesionSolTecnico.html">Solicitar tecnico</a>
+              </li>
 
-    <div class="container text-center">
+              
+            </ul>
+            
+            <form class="form-inline">
+                <input class="form-control mr-sm-2">
+                <button class="btn btn-success mr-sm-2">Buscar</button>
+                <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="iniciarsesion.html">Iniciar Sesion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="registro.html">Registrar</a>
+                </li>
+                
+            </form>
+          </div>
+        
+    </nav>
+
+    <div class="container">
         <div class="col-sn-8">
-            <div class="containter-content">
+            <div class="containter-content text-center">
                 <img src="imgp/usuario.jpg" width="200" height="200"/>
             <form action="indexRap.html" method="POST" class="form" id="form1">
-
+            </div>
                 <div class="form-group">
                     <label for="nombre">Email:</label>
                     <input type="email" name=email id="email" placeholder="Ingresa tu email" class=" validate[required] form-control">
@@ -38,15 +72,11 @@
                     <input type="password" name="contraseñareg" id="contraseñareg" placeholder="Ingresa tu contraseña" class="validate[required] form-control">
                 </div>
             
-                <div class="form-group">
+                <div class="form-group text-center">
                     <button type="submit" class="btn btn-primary" id="boton1">Registrar</button>
-                    <button type="reset" class="btn btn-primary" id="boton1">Limpiar</button>
+                    <button type="reset" class="btn btn-primary" id="boton1">Borrar datos</button>
                 </div>
 
-                <div 
-                    class="alert alert-danger" role="alert" id="mensaje">
-                </div>
-                </div>
                 
             </form>
             
@@ -70,30 +100,6 @@
 
 <script>
 
-
-    $(document).ready(function()
-    {
-        $("#form1").validationEngine();
-    });
-
-    $(document).ready(function(){
-        $("#mensaje").hide();
-
-        $("#form1").submit(
-            function()
-            {
-                var contraseña=$("#contraseña").val().trim();
-                var contraseñareg=$("#contraseñareg").val().trim();
-                if(contraseña != contraseñareg || contraseña==0 || contraseñareg==0)
-                {
-                    $("#mensaje").show(2000);
-                    $("#mensaje").html("Las contraseña no coinciden");
-                    event.preventDefault();
-                }
-            }
-        );
-
-    });
     
     
     

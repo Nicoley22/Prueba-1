@@ -10,13 +10,58 @@
     <title>Crear usuario</title>
 </head>
 <body>
-    
+    <nav class="navbar navbar-expand-lg menu">
+        <a class="navbar-brand text-black">
+          <img src="img/logo2.png" class="d-block w-100" width="60px" height="60px">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link text-dark" href="onlineinicio.html">Inicio</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="productoOnline.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="datosSolTecnico.html">Solicitar tecnico</a>
+              </li>
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Admin.
+                </a>
+                
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="inicioadmincrearint.html">Crear usuario</a>
+                  <a class="dropdown-item" href="registrointegrante.html">Ventas</a>
+                  <a class="dropdown-item" href="registrointegrante.html">Solicitudes tecnico</a>
+                  <div class="dropdown-divider"></div>
+                </div>
+              </li>
+              
 
-    <div class="container text-center">
+              
+            </ul>
+            
+            <form class="form-inline">
+                <input class="form-control mr-sm-2">
+                <button class="btn btn-success mr-sm-2">Buscar</button>
+                <a class="navbar-brand text-dark">
+                    Bienvenido/a
+                </a>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="indexRap.html">Salir</a>
+                </li>
+            </form>
+          </div>
+        </nav>
+
+    <div class="container">
         <div class="col-sn-8">
             <div class="containter-content"></div>
-                <div class="col-12">
+                <div class="col-12 text-center">
                     <img src="imgp/usuario.jpg" width="200" height="200"/>
+                </div>
                     <form action="onlineinicio.html" method="POST" class="form" id="form1">
 
                         <div class="form-group">
@@ -30,6 +75,11 @@
                         </div>
 
                         <div class="form-group">
+                            <label for="nombre">Rol:</label>
+                            <input type="text" name="rol" id="rol" placeholder="Ingresa el rol" class="validate[required] form-control">
+                        </div>
+
+                        <div class="form-group">
                             <label for="nombre">contraseña:</label>
                             <input type="password" name="contraseña" id="contraseña" placeholder="Ingresa tu contraseña" class="validate[required] form-control">
                         </div>
@@ -39,7 +89,7 @@
                             <input type="password" name="contraseñareg" id="contraseñareg" placeholder="Ingresa tu contraseña" class="validate[required] form-control">
                         </div>
                     
-                        <div class="form-group">
+                        <div class="form-group text-center">
                             <button type="submit" class="btn btn-primary" id="boton1">Registrar</button>
                             <button type="reset" class="btn btn-primary" id="boton1">Limpiar</button>
                         </div>
